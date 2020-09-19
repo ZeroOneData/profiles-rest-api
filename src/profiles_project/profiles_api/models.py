@@ -65,7 +65,7 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
         return self.email
 
 
-class ProfileFeeditem(models.Model):
+class ProfileFeedItem(models.Model):
     """Profile status updates"""
 
     user_profile = models.ForeignKey('UserProfile', on_delete=models.CASCADE)
